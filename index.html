@@ -62,10 +62,46 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-set-up-blogs-with-git-pages-and-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/14/set-up-blogs-with-git-pages-and-hexo/" class="article-date">
+  <time datetime="2018-10-14T08:42:42.000Z" itemprop="datePublished">2018-10-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/14/set-up-blogs-with-git-pages-and-hexo/">set-up-blogs-with-git-pages-and-hexo</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blogs.wanglihao.com/2018/10/14/set-up-blogs-with-git-pages-and-hexo/" data-id="cjn8pnk8u0001lnp6stkks18a" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/10/14/hello-world/" class="article-date">
-  <time datetime="2018-10-14T03:33:16.000Z" itemprop="datePublished">2018-10-14</time>
+  <time datetime="2018-10-13T16:00:00.000Z" itemprop="datePublished">2018-10-14</time>
 </a>
     
   </div>
@@ -84,20 +120,39 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>Hello World!</p>
+<p>第一篇就来讲讲搭建这个博客网站的过程～</p>
+<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>使用<a href="https://pages.github.com/" target="_blank" rel="noopener">Git Pages</a>和<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>(选择Hexo的原因是因为我只看得懂js :smirk: …)搭建个人博客网站并通过个人域名来访问。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li>安装Hexo<br> 在安装Hexo之前先确保已经安装了NodeJs和Git，Hexo的安装详见<a href="https://hexo.io/docs/" target="_blank" rel="noopener">官方文档</a></li>
+<li><p>初始化Hexo</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blogs</span><br><span class="line">cd blogs</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p> 依次调用上述三个命令，就可以创建一个本地博客网站的编写环境了。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;hello world&quot;</span><br></pre></td></tr></table></figure>
+<p> 调用上述三个命令利用git保存我们的改动。</p>
+</li>
+<li><p>本地浏览</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-server --save</span><br></pre></td></tr></table></figure>
+<p> 执行以上命令安装hexo-server，然后执行<code>hexo server</code>，就可以通过<code>localhost:4000</code>来浏览博客内容啦～</p>
+</li>
+<li><p>部署Git Pages<br> 首先需要在github上创建一个repository，用于存放博客的内容文件。这里简单说一下Git Pages在不同名称的repository下的区别:</p>
+<p> 名称 | 含义 | 内容文件位置 | url<br> username.github.io | 用户（机构）页面 | 文件只能存放在master分支的根目录 | username.github.io<br> otherwise | 项目页面 | 文件可以存放在master分支的根目录或者根目录下的docs目录，或者gh-pages分支的根目录 | username.github.io/project-name</p>
+<p> 我使用了blogs作为repository的名字，所以这是一个项目页面，同时我选择将内容文件存放在gh-pages分支上，并且将编辑环境保存在master分支上，这样就可以在master分支上编辑，在gh-pages分支上发布。<br> 这里可以先把本地的编写环境推到github上保存，下面以我的github地址为例：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add remote git@github.com:impatrickwang/blogs.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p> 执行上述命令后，本地的编写环境就上传到了github的master分支上。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p> 然后执行上面这条命令安装<code>hexo-deployer-it</code>。接下来在_config.yaml文件中添加部署的配置：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git   </span><br><span class="line">  repo: &lt;repository url&gt;  #git@github.com:impatrickwang/blogs.git</span><br><span class="line">  branch: [branch] #gh-pages</span><br><span class="line">  message: [message]  #leave this blank</span><br></pre></td></tr></table></figure>
+<p> 最后执行<code>hexo clean &amp; hexo deploy --generate</code>，就完成了内容文件的发布。这个时候可以去github上看一下对应repository的gh-pages分支里就保存着博客网站的内容文件。</p>
+</li>
+<li>配置github<br> 在repository的setting中找到关于Github Pages相关的设置，将source配置为gh-pages分支。这样就可以通过github提供的url(我这里的例子是impatrickwang.github.io/blogs)来访问博客内容了。</li>
+<li>个人域名<br> 这里以配置二级域名blogs.wanglihao.cn为例。首先需要在个人域名上添加一条CNAME(blogs.wanglihao.cn, impatrickwang.github.io)，将你的二级域名指向github分配给你的域名。然后在repository的配置中，配置个人域名为blogs.wanglihao.cn。<br> 这样就可以通过二级域名来访问博客网站了～</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blogs.wanglihao.com/2018/10/14/hello-world/" data-id="cjn8m2prd0000a3p6p42atv76" class="article-share-link">Share</a>
+      <a data-url="http://blogs.wanglihao.com/2018/10/14/hello-world/" data-id="cjn8pnk8q0000lnp6ip1m7ulg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -136,6 +191,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/10/14/set-up-blogs-with-git-pages-and-hexo/">set-up-blogs-with-git-pages-and-hexo</a>
+          </li>
         
           <li>
             <a href="/2018/10/14/hello-world/">Hello World</a>
